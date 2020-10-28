@@ -387,6 +387,7 @@
         /* ------------------- footer------------------- */
         footer {
             background-color: black;
+            margin-top: 1px;
             color: white;
             display: flex;
             justify-content: space-around;
@@ -398,3 +399,7 @@
             padding: 4px;
         }
         /* ---------------------footer end--------------------- */
+        .end{    
+            height: 1px;
+            background-color: white;
+       }
