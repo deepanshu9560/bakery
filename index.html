@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Bakery</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* ----------------------------making navbar-------------------------- */
+        #navbar::before {
+            content: "";
+            position: absolute;
+            background-color: black;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        #navbar {
+            position: sticky;
+            top: 0px;
+            /* border: 2px solid blue; */
+            height: auto;
+            display: flex;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        #navbar .box1 {
+            /* border: 2px solid rebeccapurple; */
+            height: auto;
+        }
+
+        #navbar .box1 img {
+            margin-top: 5px;
+            margin-left: 5px;
+            height: 45px;
+            width: 45px;
+            padding-left: 2px;
+            padding-top: 2px;
+        }
+
+        #navbar .box2 {
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            padding-left: 50px;
+        }
+
+        #navbar ul li a {
+            text-decoration: none;
+            border: 2px solid white;
+            color: white;
+            padding: 0px 15px;
+            border-radius: 5px;
+            transition: all 0.2s linear;
+        }
+
+        #navbar ul li a:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid white;
+        }
+
+        /* -------------------------navbar making end------------------------- */
+        /* -------------------------navbar section making--------------------- */
+        #navbar-section::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 557px;
+            ;
+            width: 100%;
+            background: url(/navbar-section.jpg) no-repeat center center/cover;
+            z-index: -1;
+            opacity: 0.95;
+        }
+
+        #navbar-section {
+            display: flex;
+            height: auto;
+            /* border: 2px solid red; */
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        #navbar-section .item {
+            /* border: 2px solid gold; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+
+        #navbar-section .item h1 {
+            font-size: 3.0rem;
+            text-shadow: 2px 2px 1px black;
+        }
+
+        #navbar-section .item p {
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 1px black;
+        }
+
+        /* -------------------------navbar section making end--------------------- */
+        /* -------------------------services section--------------------- */
+        .serviceh1 {
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        #services {
+            /* border: 2px solid red; */
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #services #box {
+            border: 2px solid rgb(49, 147, 238);
+            height: 280px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            background-color: #8080802e;
+        }
+
+        #services .box1 img {
+            padding-top: 15px;
+            height: auto;
+            width: 100%
+        }
+
+        #services .box1 p {
+            text-align: center;
+            padding-bottom: 5px;
+        }
+
+        #services .box2 img {
+            height: auto;
+            width: 100%
+        }
+
+        #services .box2 p {
+            text-align: center;
+            padding-bottom: 12px;
+        }
+
+        #services .box3 img {
+            height: auto;
+            width: 100%
+        }
+
+        #services .box3 p {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        #services .box4 img {
+            height: auto;
+            width: 56%
+        }
+
+
+        #services .box4 p {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        #services2 {
+            /* border: 2px solid red; */
+            margin-top: 20px;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #services2 #box {
+            border: 2px solid rgb(49, 147, 238);
+            height: 280px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            background-color: #8080802e;
+        }
+
+        #services2 .box5 img {
+            height: auto;
+            width: 100%;
+            margin-right: 70px;
+        }
+
+        #services2 .box5 p {
+            text-align: center;
+            padding-bottom: 5px;
+        }
+
+        #services2 .box6 img {
+            height: auto;
+            width: 100%;
+        }
+
+        #services2 .box6 p {
+            text-align: center;
+            padding-bottom: 2px;
+        }
+
+        #services2 .box7 img {
+            height: auto;
+            width: 100%;
+        }
+
+        #services2 .box7 p {
+            text-align: center;
+            padding-bottom: 90px;
+        }
+
+        #services2 .box8 img {
+            height: auto;
+            width: 85%;
+        }
+
+        #services2 .box8 p {
+            text-align: center;
+
+        }
+
+        #services2 .box8 h2 {
+            margin-top: 37px;
+        }
+
+        /* -------------------------services section end--------------------- */
+        /* ---------------------Clients section make------------------------ */
+        .clients {
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        #clients-section::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            background: url(/clients.jpg) no-repeat center center/cover;
+            opacity: 0.2;
+            z-index: 1;
+        }
+
+        #clients-section {
+            position: relative;
+            /* border: 2px solid red; */
+            height: auto;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #clients-section .imgc img {
+            height: auto;
+            width: 100%;
+        }
+
+        /* ---------------------Clients section end------------------------ */
+        /* ---------------------friendly environment make-------------------- */
+        #friendly h1 {
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 2.0rem;
+        }
+
+        #friendly img {
+            height: auto;
+            width: 100%;
+        }
+
+        /* ----------------friendly environment end--------------------- */
+        /* ---------------Wednesday special make---------------- */
+        #off {
+            /* border: 2px solid red; */
+            margin-top: 1px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #off #offer {
+            /* border: 2px solid blue; */
+            height: auto;
+            width: 47%;
+        }
+
+        #off .pic img {
+            height: auto;
+            width: 100%;
+        }
+
+        #off .topic h1 {
+            text-align: center;
+            font-size: 2.3rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            color: rgb(49, 147, 238);
+        }
+        .change-content:after{
+            content: '';
+            animation : changetext 15s infinite;
+        }
+        @keyframes changetext{
+            0% {content: "Wednesday 20% off";}
+            20% {content: "Thursday 35% off";}
+            40% {content: "Sunday 10% off";}
+            60% {content: "Saturday 40% off";}
+            80% {content: "Monday 15% off";}
+            100% {content: "Tuesday 50% off";}
+        }
+
+        #off .topic p {
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+        }
+
+        /* ---------------Wednesday special end---------------- */
+        /* ---------------------feedback form-------------------- */
+        #text {
+            /* border: 2px solid red; */
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            background: url(/feedback.jpg) no-repeat center center/cover;
+        }
+
+        #text .feedback {
+            color: rgb(49, 147, 238);
+        }
+
+        #text .formgroup {
+            font-size: 1.3rem;
+        }
+
+        #text form button {
+            font-size: 1.2rem;
+            padding-right: 50px;
+            padding-left: 50px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s linear;
+        }
+
+        #text form button:hover {
+            background-color: rgb(158, 158, 158);
+            border: 2px solid white;
+            color: white;
+        }
+
+        #text .formgroup input {
+            font-size: 1.1rem;
+        }
+
+        /* ------------------- footer------------------- */
+        footer {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        footer .icon img {
+            padding: 4px;
+        }
+        /* ---------------------footer end--------------------- */
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="box1"><img src="/logokitch.png" alt=""></div>
+        <div class="box2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="navbar-section">
+        <div class="item">
+            <h1>Welcome To My Bakery Shop</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur sit amet consectetur!</p>
+            <p>Lorem ipsum dolor sit amet dolor sit amet.</p>
+            <p>Lorem, ipsum ipsum dolor.</p>
+        </div>
+    </div>
+    <h1 class="serviceh1">Our Services</h1>
+    <section id="services">
+        <div class="box1" id="box"><img src="/1.png" alt="">
+            <h2>Choclate Cup</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="box2" id="box"><img src="/2.png" alt="">
+            <h2>Jems Donut</h2>
+            <p>Lorem ipsum dolor sit amet consectetur amet dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="box3" id="box"><img src="/3.png" alt="">
+            <h2>Choclate cake</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="box4" id="box"><img src="/4.png" alt="">
+            <h2>Bread Omelate</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </section>
+    <section id="services2">
+        <div class="box5" id="box"><img src="/5.png" alt="">
+            <h2>Red Jam Patty</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="box6" id="box"><img src="/6.png" alt="">
+            <h2>Jumbo Donut</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="box7" id="box"><img src="/7.png" alt="">
+            <h2>Strawberry Muffin</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="box8" id="box"><img src="/8.png" alt="">
+            <h2>Choclate Pie</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </section>
+    <h1 class="clients">Our Clients</h1>
+    <section id="clients-section">
+        <div class="imgc"><img src="/sponsor.png" alt=""></div>
+    </section>
+    <section id="friendly">
+        <h1>Friendly Environment</h1>
+        <img src="/friendly.jpg" alt="">
+    </section>
+    <section id="off">
+        <div class="pic" id="offer"><img src="/offer.jpg" alt=""></div>
+        <div class="topic" id="offer">
+            <h1 id="para">Special Offer <span class="change-content"></span></h1>
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ducimus mollitia saepe
+                nulla magnam tempora officiis nostrum architecto, ullam natus harum provident aliquam quod amet maxime?
+                Nobis cupiditate vero officiis! Debitis possimus laborum rerum non saepe officiis est tempore, quam
+                natus perspiciatis consequuntur iusto deleniti quaerat nulla tempora necessitatibus facilis, numquam
+                culpa voluptatem nesciunt? Natus ab delectus tempora cupiditate iusto quod totam temporibus, tempore
+                quidem exercitationem culpa, quibusdam, ratione at nostrum porro. Similique perferendis facilis
+                accusamus, explicabo illum quibusdam ipsam. Perspiciatis sequi est quia exercitationem atque, accusamus
+                maiores iste recusandae voluptatibus dolore? Delectus fugit quasi minima dolorem, numquam fuga sequi.
+            </p>
+        </div>
+    </section>
+
+    <div id="text">
+        <h1 class="feedback">Please Give Us Your Feedback</h1>
+        <form action="jdh.js">
+            <div class="formgroup">
+                <label for="nam">Name</label><br>
+                <input type="text" id="Name" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                <label for="email">email id</label><br>
+                <input type="email" id="email" placeholder="Enter your email id">
+            </div>
+            <div class="formgroup">
+                <label for="message">message</label><br>
+                <textarea id="write" cols="50" rows="10"></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <footer>
+        Copyright &copy; Bakery.com. All Rights Reserved!
+        <div class="icon">
+            <img src="/facebook.svg" alt="">
+            <img src="/instagram.svg" alt="">
+            <img src="/twitter.svg" alt="">
+            <img src="/google.svg" alt="">
+            <img src="/search.svg" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>
