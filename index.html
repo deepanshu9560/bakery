@@ -9,9 +9,167 @@
     <link rel="stylesheet" href="/bakery/css/style.css">
     <title>Bakery</title>
     <style>
-    html{
-        scroll-behavior: smooth;
-    }      
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* This is making for responsive website */
+        /* ------------------------------------moblie phone-------------------------------- */
+        @media (max-width: 907px) {
+            #services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #services .box2 {
+                margin: 10px;
+            }
+
+            #services2 {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            #services2 .box5 {
+                margin: 10px;
+            }
+
+            #services3 {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            #services3 .box8 {
+                margin: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #off .topic h1 {
+                font-size: 1.1rem;
+            }
+
+            #off .topic p {
+                font-size: 0.6rem;
+            }
+
+            #navbar-section .item h1 {
+                font-size: 2.3rem;
+            }
+
+            #navbar-section .item p {
+                font-size: 1.1rem;
+            }
+
+            #navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #navbar ul li a {
+                padding: 0px 10px;
+            }
+
+            #navbar ul li {
+                padding: 16px;
+            }
+
+            .serviceh1 {
+                margin-top: -60px;
+            }
+        }
+
+        @media (max-width: 477px) {
+            #navbar ul li a {
+                padding: 0px 3px;
+                font-size: 0.8rem;
+            }
+
+            #navbar ul li {
+                padding: 5px;
+            }
+
+            #navbar-section .item h1 {
+                font-size: 1.4rem;
+            }
+
+            #navbar-section .item p {
+                font-size: 0.6rem;
+            }
+
+            .serviceh1 {
+                margin-top: -35px;
+            }
+
+            #off .topic h1 {
+                font-size: 0.6rem;
+            }
+
+            #off .topic p {
+                font-size: 7px;
+                padding: 1px;
+            }
+
+            #services #box {
+                height: auto;
+                width: 90%;
+            }
+
+            #services2 #box {
+                height: auto;
+                width: 90%;
+            }
+
+            #services3 #box {
+                width: 90%;
+            }
+
+            #services3 .box7 img {
+                height: auto;
+                width: 100%;
+            }
+
+            #services3 .box7 h2 {
+                padding-top: 20px;
+            }
+
+            footer {
+                font-size: 0.6rem;
+            }
+
+            footer .icon img {
+                height: 14px;
+                width: 14px;
+            }
+
+            #text .formgroup {
+                font-size: 1.3rem;
+            }
+
+            #text form button {
+                font-size: 0.7rem;
+            }
+
+            #text .formgroup input {
+                font-size: 1.1rem;
+            }
+
+            #text .feedback {
+                font-size: 1.3rem;
+            }
+
+            #friendly h1 {
+                font-size: 1.9rem;
+            }
+        }
+
+        /* ----------------------tablet and ipads----------------------------   */
+        @media (min-width: 769px) and (max-width: 1023px) {}
+
+        /* -----------------------destop and laptops----------------------------- */
+        @media (min-width: 1024px) {}
     </style>
 </head>
 
@@ -20,7 +178,7 @@
         <div class="box1"><img src="/bakery/logokitch.png" alt=""></div>
         <div class="box2">
             <ul>
-                <li><a href="#navbar-section">Home</a></li>
+                <li><a href="#navbar">Home</a></li>
                 <li><a href="#sectionh">Our Clients</a></li>
                 <li><a href="#off">Services</a></li>
                 <li><a href="#text">Contact us</a></li>
@@ -48,7 +206,7 @@
         <div class="box3" id="box"><img src="/bakery/3.png" alt="">
             <h2>Choclate cake</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        </div>        
+        </div>
     </section>
     <section id="services2">
         <div class="box4" id="box"><img src="/bakery/4.png" alt="">
@@ -62,7 +220,7 @@
         <div class="box6" id="box"><img src="/bakery/6.png" alt="">
             <h2>Jumbo Donut</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        </div>       
+        </div>
     </section>
     <section id="services3">
         <div class="box7" id="box"><img src="/bakery/7.png" alt="">
@@ -90,15 +248,10 @@
         <div class="pic" id="offer"><img src="/bakery/offer.jpg" alt=""></div>
         <div class="topic" id="offer">
             <h1 id="para">Special Offer <span class="change-content"></span></h1>
-            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ducimus mollitia saepe
-                nulla magnam tempora officiis nostrum architecto, ullam natus harum provident aliquam quod amet maxime?
-                Nobis cupiditate vero officiis! Debitis possimus laborum rerum non saepe officiis est tempore, quam
-                natus perspiciatis consequuntur iusto deleniti quaerat nulla tempora necessitatibus facilis, numquam
-                culpa voluptatem nesciunt? Natus ab delectus tempora cupiditate iusto quod totam temporibus, tempore
-                quidem exercitationem culpa, quibusdam, ratione at nostrum porro. Similique perferendis facilis
-                accusamus, explicabo illum quibusdam ipsam. Perspiciatis sequi est quia exercitationem atque, accusamus
-                maiores iste recusandae voluptatibus dolore? Delectus fugit quasi minima dolorem, numquam fuga sequi.
-            </p>
+            <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi eligendi inventore labore ex
+                enim reiciendis dolor. Quisquam, nam quibusdam sit repellendus doloribus ex nesciunt reiciendis
+                consequatur fuga laboriosam neque temporibus, mollitia ducimus quod odit qui cumque soluta suscipit
+                culpa cupiditate reprehenderit delectus id quidem aliquid. Minus cumque aut et eaque.</p>
         </div>
     </section>
 
@@ -115,7 +268,7 @@
             </div>
             <div class="formgroup">
                 <label for="message">message</label><br>
-                <textarea id="write" cols="50" rows="10"></textarea>
+                <textarea id="write" cols="29" rows="10"></textarea>
             </div>
             <button type="submit">Send</button>
         </form>
@@ -131,6 +284,7 @@
         </div>
     </footer>
     <footer class="end"></footer>
+
 </body>
 
 </html>
