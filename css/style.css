@@ -170,19 +170,7 @@
         #services .box3 p {
             text-align: center;
             padding-bottom: 20px;
-        }
-
-        #services .box4 img {
-            height: auto;
-            width: 56%
-        }
-
-
-        #services .box4 p {
-            text-align: center;
-            padding-bottom: 20px;
-        }
-
+        }        
         #services2 {
             /* border: 2px solid red; */
             margin-top: 20px;
@@ -203,6 +191,17 @@
             border-radius: 30px;
             background-color: #8080802e;
         }
+         #services2 .box4 img {
+            height: auto;
+            width: 56%
+        }
+
+
+        #services2 .box4 p {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
 
         #services2 .box5 img {
             height: auto;
