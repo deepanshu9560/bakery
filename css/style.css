@@ -223,31 +223,64 @@
         #services2 .box6 p {
             text-align: center;
             padding-bottom: 2px;
-        }
+        }       
+       #services3 {
+       /* border: 2px solid red; */
+       margin-top: 20px;
+       height: auto;
+       display: flex;
+       justify-content: space-around;
+       font-family: 'Raleway', sans-serif;
+       }
 
-        #services2 .box7 img {
-            height: auto;
-            width: 100%;
-        }
+      #services3 #box {
+      border: 2px solid rgb(49, 147, 238);
+      height: 280px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+      background-color: #8080802e;
+      }
 
-        #services2 .box7 p {
-            text-align: center;
-            padding-bottom: 90px;
-        }
+     #services3 .box7 img {
+     height: auto;
+     width: 100%;
+     }
 
-        #services2 .box8 img {
-            height: auto;
-            width: 85%;
-        }
+     #services3 .box7 p {
+     text-align: center;
+     padding-bottom: 90px;
+     }
 
-        #services2 .box8 p {
-            text-align: center;
+     #services3 .box8 img {
+     height: auto;
+     width: 85%;
+     }
 
-        }
+     #services3 .box8 p {
+     text-align: center;
 
-        #services2 .box8 h2 {
-            margin-top: 37px;
-        }
+     }
+
+     #services3 .box8 h2 {
+     margin-top: 37px;
+     }
+     #services3 .box9 img {
+     height: auto;
+     width: 85%;
+     }
+
+     #services3 .box9 p {
+     text-align: center;
+
+     }
+
+     #services3 .box9 h2 {
+     margin-top: 37px;
+     }
 
         /* -------------------------services section end--------------------- */
         /* ---------------------Clients section make------------------------ */
